@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { useDispatch } from 'react-redux';
-import { resetUser, setUser } from '../state/slices/userStateSlice';
+import { resetUser, setUser } from '@/state/slices/userStateSlice';
 
 const Home = () => {
   const dispatch = useDispatch();

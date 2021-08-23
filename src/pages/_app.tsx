@@ -1,9 +1,9 @@
+import { store } from '@/state/store';
+import theme from '@/theme/theme';
 import { CssBaseline, ThemeProvider } from '@material-ui/core';
 import { AppProps } from 'next/dist/shared/lib/router/router';
 import React, { useEffect } from 'react';
 import { Provider } from 'react-redux';
-import { store } from '../state/store';
-import theme from '../theme/theme';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {

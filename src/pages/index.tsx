@@ -13,9 +13,7 @@ const Home = () => {
     return () => {
       dispatch(resetUser());
     };
-  }, [
-    dispatch,
-  ]);
+  }, [ dispatch ]);
   return (
     <div>
       <Head>

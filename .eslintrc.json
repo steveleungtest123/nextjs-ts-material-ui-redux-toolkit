@@ -44,9 +44,14 @@
         }
       }
     ],
-    "array-bracket-newline": ["error", "always"],
     "array-bracket-spacing": ["error", "always", { "arraysInArrays": false }],
-    "array-element-newline": ["warn", "always"],
+    "array-element-newline": [
+      "warn",
+      {
+        "multiline": true,
+        "minItems": 3
+      }
+    ],
     "computed-property-spacing": "error",
     "block-spacing": "error",
     "brace-style": "error",
@@ -62,6 +67,7 @@
     "prefer-destructuring": "error",
     "prefer-template": "error",
     "template-curly-spacing": "error",
+    "space-infix-ops": "warn",
     "semi": ["warn", "always"],
     "semi-spacing": "warn",
     "semi-style": ["warn", "last"],

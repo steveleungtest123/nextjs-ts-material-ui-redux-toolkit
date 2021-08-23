@@ -1,0 +1,71 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "next",
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@next/next/recommended",
+    "google"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "require-jsdoc": "off",
+    "linebreak-style": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/jsx-uses-vars": "error",
+    "object-curly-spacing": ["error", "always"],
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": "always",
+        "ObjectPattern": {
+          "multiline": true
+        }
+      }
+    ],
+    "array-bracket-newline": ["error", "always"],
+    "array-bracket-spacing": ["error", "always", { "arraysInArrays": false }],
+    "array-element-newline": ["warn", "always"],
+    "computed-property-spacing": "error",
+    "block-spacing": "error",
+    "brace-style": "error",
+    "camelcase": "error",
+    "indent": ["error", 2],
+    "no-multi-assign": "error",
+    "no-trailing-spaces": "error",
+    "arrow-spacing": "error",
+    "no-confusing-arrow": "error",
+    "no-duplicate-imports": "error",
+    "no-duplicate-case": "error",
+    "prefer-const": "error",
+    "prefer-destructuring": "error",
+    "prefer-template": "error",
+    "template-curly-spacing": "error",
+    "semi": ["warn", "always"],
+    "semi-spacing": "warn",
+    "semi-style": ["warn", "last"],
+    "padded-blocks": "warn",
+    "eqeqeq": "warn"
+  }
+}
